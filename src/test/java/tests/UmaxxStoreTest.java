@@ -16,3 +16,5 @@ public class UmaxxStoreTest extends BasesetupUmaxx5G {
 	  storePage.verifyAnnouncementBarText();
   }
 }
+
+//umaxx store hole automation
