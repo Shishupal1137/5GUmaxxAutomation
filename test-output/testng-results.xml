@@ -14,16 +14,16 @@
       <![CDATA[✅ Announcement bar text verified: Join the UMAXX Revolution get 20% off all merch]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-07-19T15:09:15 IST" name="Default suite" finished-at="2025-07-19T15:09:27 IST" duration-ms="11506">
+  <suite started-at="2025-07-22T12:49:28 IST" name="Default suite" finished-at="2025-07-22T12:50:00 IST" duration-ms="32302">
     <groups>
     </groups>
-    <test started-at="2025-07-19T15:09:15 IST" name="Default test" finished-at="2025-07-19T15:09:27 IST" duration-ms="11506">
+    <test started-at="2025-07-22T12:49:28 IST" name="Default test" finished-at="2025-07-22T12:50:00 IST" duration-ms="32302">
       <class name="tests.UmaxxStoreTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:tests.UmaxxStoreTest@69453e37]" started-at="2025-07-19T15:08:58 IST" name="beforeSuite" finished-at="2025-07-19T15:09:15 IST" duration-ms="17247" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:tests.UmaxxStoreTest@69453e37]" started-at="2025-07-22T12:49:12 IST" name="beforeSuite" finished-at="2025-07-22T12:49:28 IST" duration-ms="15786" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.UmaxxStoreTest@69453e37]" started-at="2025-07-19T15:09:16 IST" name="beforeMethod" finished-at="2025-07-19T15:09:16 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.UmaxxStoreTest@69453e37]" started-at="2025-07-22T12:49:28 IST" name="beforeMethod" finished-at="2025-07-22T12:49:28 IST" duration-ms="8" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,7 +34,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyUmaxxStore()[pri:0, instance:tests.UmaxxStoreTest@69453e37]" started-at="2025-07-19T15:09:16 IST" name="verifyUmaxxStore" finished-at="2025-07-19T15:09:27 IST" duration-ms="11128" status="PASS">
+        <test-method signature="verifyUmaxxStore()[pri:0, instance:tests.UmaxxStoreTest@69453e37]" started-at="2025-07-22T12:49:28 IST" name="verifyUmaxxStore" finished-at="2025-07-22T12:50:00 IST" duration-ms="32030" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[✅ Clicked the Navbar Toggle button]]>
@@ -50,7 +50,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- verifyUmaxxStore -->
-        <test-method is-config="true" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:tests.UmaxxStoreTest@69453e37]" started-at="2025-07-19T15:09:27 IST" name="afterMethod" finished-at="2025-07-19T15:09:27 IST" duration-ms="322" status="PASS">
+        <test-method is-config="true" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:tests.UmaxxStoreTest@69453e37]" started-at="2025-07-22T12:50:00 IST" name="afterMethod" finished-at="2025-07-22T12:50:00 IST" duration-ms="209" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -61,7 +61,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:tests.UmaxxStoreTest@69453e37]" started-at="2025-07-19T15:09:27 IST" name="afterSuite" finished-at="2025-07-19T15:09:28 IST" duration-ms="636" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:tests.UmaxxStoreTest@69453e37]" started-at="2025-07-22T12:50:00 IST" name="afterSuite" finished-at="2025-07-22T12:50:01 IST" duration-ms="740" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
