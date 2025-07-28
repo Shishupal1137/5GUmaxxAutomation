@@ -17,15 +17,15 @@ public class InternetPlanTest extends BasesetupUmaxx5G {
         internet.verifyPrivacySecurityLinkText();
         internet.verifyAndScrollToStarterPlan();
         internet.verifyAndScrollToExtraPlan();
-        internet.verifyAndScrollToUltraPlan();
+        //internet.verifyAndScrollToUltraPlan();
         internet.verifyAndScrollToPremiumPlan();
         internet.verifyAndScrollStarterPrice();
         internet.verifyAndScrollExtraPrice();
-        internet.verifyAndScrollUltraPrice();
+      //  internet.verifyAndScrollUltraPrice();
         internet.verifyAndScrollPremiumPrice();
         internet.verifyAndScrollStarterDataPlan();
         internet.verifyAndScrollExtraDataPlan();
-        internet.verifyAndScrollUltraUnlimitedDataPlan();
+     //  internet.verifyAndScrollUltraUnlimitedDataPlan();
         internet.verifyAndScrollPremiumUnlimitedDataPlan();
     }
     

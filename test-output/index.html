@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\shish\AppData\Local\Temp\testng-eclipse--221047724\testng-customsuite.xml</span>
+                    <span>C:\Users\shish\AppData\Local\Temp\testng-eclipse--1883222090\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="tests.InternetPlanTest" class="method navigator-link" hash-for-method="FillcardDetails">FillcardDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +117,27 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.UmaxxStoreTest" class="method navigator-link" hash-for-method="verifyUmaxxStore">verifyUmaxxStore</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="tests.InternetPlanTest" class="method navigator-link" hash-for-method="Fillisoftdetails">Fillisoftdetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="tests.InternetPlanTest" class="method navigator-link" hash-for-method="orderNowform">orderNowform</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="tests.InternetPlanTest" class="method navigator-link" hash-for-method="verify5gInternetPlanpage">verify5gInternetPlanpage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="tests.InternetPlanTest" class="method navigator-link" hash-for-method="verifyRouterFunctionality">verifyRouterFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="tests.InternetPlanTest" class="method navigator-link" hash-for-method="verifyselectplan">verifyselectplan</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -118,17 +152,92 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.UmaxxStoreTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">tests.InternetPlanTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyUmaxxStore">
-                  </a> <!-- verifyUmaxxStore -->
-                  <span class="method-name">verifyUmaxxStore</span>
+                  <a name="FillcardDetails">
+                  </a> <!-- FillcardDetails -->
+                  <span class="method-name">FillcardDetails</span>
+                  <div class="stack-trace">java.lang.AssertionError: ❌ Could not find Stripe card number field in any iframe.
+	at org.testng.Assert.fail(Assert.java:111)
+	at pages.InternetPlanPage.enterStripeCardNumber(InternetPlanPage.java:1059)
+	at tests.InternetPlanTest.FillcardDetails(InternetPlanTest.java:98)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.InternetPlanTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Fillisoftdetails">
+                  </a> <!-- Fillisoftdetails -->
+                  <span class="method-name">Fillisoftdetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="orderNowform">
+                  </a> <!-- orderNowform -->
+                  <span class="method-name">orderNowform</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify5gInternetPlanpage">
+                  </a> <!-- verify5gInternetPlanpage -->
+                  <span class="method-name">verify5gInternetPlanpage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRouterFunctionality">
+                  </a> <!-- verifyRouterFunctionality -->
+                  <span class="method-name">verifyRouterFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyselectplan">
+                  </a> <!-- verifyselectplan -->
+                  <span class="method-name">verifyselectplan</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,7 +245,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\shish\AppData\Local\Temp\testng-eclipse--221047724\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\shish\AppData\Local\Temp\testng-eclipse--1883222090\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,7 +254,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.UmaxxStoreTest&quot;/&gt;
+      &lt;class name=&quot;tests.InternetPlanTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -185,16 +294,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyUmaxxStore')
-data.setCell(0, 2, 'tests.UmaxxStoreTest')
-data.setCell(0, 3, 32030);
+data.setCell(0, 1, 'FillcardDetails')
+data.setCell(0, 2, 'tests.InternetPlanTest')
+data.setCell(0, 3, 50717);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyRouterFunctionality')
+data.setCell(1, 2, 'tests.InternetPlanTest')
+data.setCell(1, 3, 38804);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'orderNowform')
+data.setCell(2, 2, 'tests.InternetPlanTest')
+data.setCell(2, 3, 30851);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verify5gInternetPlanpage')
+data.setCell(3, 2, 'tests.InternetPlanTest')
+data.setCell(3, 3, 18796);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyselectplan')
+data.setCell(4, 2, 'tests.InternetPlanTest')
+data.setCell(4, 3, 11809);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Fillisoftdetails')
+data.setCell(5, 2, 'tests.InternetPlanTest')
+data.setCell(5, 3, 5355);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 32 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -206,12 +335,106 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">verifyUmaxxStore</span>
+              <span class="reporter-method-name">verifyselectplan</span>
               <div class="reporter-method-output-div">
+                <span class="reporter-method-output">✅ Clicked on the STARTER plan</span>
+                <span class="reporter-method-output">📄 Found heading text: 5G Coverage Availability</span>
+                <span class="reporter-method-output">✅ 5G Coverage Availability heading is correct</span>
+                <span class="reporter-method-output">📥 Entered ZIP code: 12345</span>
+                <span class="reporter-method-output">🟢 Clicked on the GO button after entering ZIP code</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verify5gInternetPlanpage</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">📄 Page Title: UMAXX - BIGGER FASTER STRONGER UMAXX 5G TV, IPTV</span>
+                <span class="reporter-method-output">✅ Page title verification passed</span>
                 <span class="reporter-method-output">✅ Clicked the Navbar Toggle button</span>
-                <span class="reporter-method-output">✅ Clicked on 'UMAXX Store'</span>
-                <span class="reporter-method-output">✅ Verified heading text: Welcome 2 UMAXX Merchandise</span>
-                <span class="reporter-method-output">✅ Announcement bar text verified: Join the UMAXX Revolution get 20% off all merch</span>
+                <span class="reporter-method-output">✅ Clicked on 5G Internet Plans link</span>
+                <span class="reporter-method-output">📄 Found heading: 5G Internet Plans</span>
+                <span class="reporter-method-output">✅ 5G Internet Plans heading text is correct</span>
+                <span class="reporter-method-output">📄 Paragraph text found: Experience Military Grade Speed and Security</span>
+                <span class="reporter-method-output">✅ Paragraph text is correct</span>
+                <span class="reporter-method-output">📄 Link text found: See Why UMAXX Offers America's Best Privacy & Security</span>
+                <span class="reporter-method-output">✅ Privacy & Security link text is correct</span>
+                <span class="reporter-method-output">📄 Found plan text: STARTER</span>
+                <span class="reporter-method-output">✅ 'STARTER' plan is displayed and scrolled into view</span>
+                <span class="reporter-method-output">📄 Found plan text: EXTRA</span>
+                <span class="reporter-method-output">✅ 'EXTRA' plan is displayed and scrolled into view</span>
+                <span class="reporter-method-output">📄 Found plan text: PREMIUM</span>
+                <span class="reporter-method-output">✅ 'PREMIUM' plan is displayed and scrolled into view</span>
+                <span class="reporter-method-output">📄 Found Starter plan price: 39</span>
+                <span class="reporter-method-output">✅ Starter plan price is correct and visible</span>
+                <span class="reporter-method-output">📄 Found Extra plan price: 79</span>
+                <span class="reporter-method-output">✅ Extra plan price is correct and visible</span>
+                <span class="reporter-method-output">📄 Found Premium plan price: 139</span>
+                <span class="reporter-method-output">✅ Premium plan price is correct and visible</span>
+                <span class="reporter-method-output">📄 Found Starter data plan: 10 GB</span>
+                <span class="reporter-method-output">✅ Starter data plan is correct and visible</span>
+                <span class="reporter-method-output">📄 Found EXTRA data plan: 50 GB</span>
+                <span class="reporter-method-output">✅ EXTRA data plan is correct and visible</span>
+                <span class="reporter-method-output">📄 Found PREMIUM data plan tag: UNLIMITED</span>
+                <span class="reporter-method-output">✅ PREMIUM data plan is correct and visible</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Fillisoftdetails</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">✅ Entered First Name: Test</span>
+                <span class="reporter-method-output">✅ Entered Last Name: test2</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyRouterFunctionality</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">📄 Found heading: Choose Your 5G Wireless Device</span>
+                <span class="reporter-method-output">✅ 5G Wireless Device heading is correct</span>
+                <span class="reporter-method-output">✅ Clicked on 'See Why UMAXX Offers America's Best Coverage' link</span>
+                <span class="reporter-method-output">📄 Found paragraph text: Map Shows 5G Coverage of UMAXX,Verizon and AT&T</span>
+                <span class="reporter-method-output">✅ 5G Coverage paragraph text is correct</span>
+                <span class="reporter-method-output">✅ Clicked on the close (X) button</span>
+                <span class="reporter-method-output">📄 Found paragraph: Mobile Pocket WI-FI</span>
+                <span class="reporter-method-output">✅ Mobile Pocket WI-FI text is correct</span>
+                <span class="reporter-method-output">📄 Found paragraph: In-Home Device</span>
+                <span class="reporter-method-output">✅ In-Home Device text is correct</span>
+                <span class="reporter-method-output">📄 Found device title: Netgear MR6150</span>
+                <span class="reporter-method-output">✅ Netgear MR6150 device name is correctly displayed</span>
+                <span class="reporter-method-output">📄 Found device title: Nokia FWA 12</span>
+                <span class="reporter-method-output">✅ Nokia FWA 12 device name is correctly displayed</span>
+                <span class="reporter-method-output">📌 Best Use Text Found: HOME, BOAT,RV & ON-THE-GO</span>
+                <span class="reporter-method-output">✅ Netgear is correctly labeled for HOME, BOAT, RV & ON-THE-GO</span>
+                <span class="reporter-method-output">📌 Best Use Text Found for Nokia FWA: PERFECT FOR HOME</span>
+                <span class="reporter-method-output">✅ Nokia FWA 12 is correctly labeled as PERFECT FOR HOME</span>
+                <span class="reporter-method-output">✅ Clicked on 'More Details' for Netgear</span>
+                <span class="reporter-method-output">✅ Clicked Close button on document/modal</span>
+                <span class="reporter-method-output">✅ Clicked 'More Details' link for Nokia FWA</span>
+                <span class="reporter-method-output">🔁 Switched to document window</span>
+                <span class="reporter-method-output">❎ Closed document tab</span>
+                <span class="reporter-method-output">🔙 Switched back to main window</span>
+                <span class="reporter-method-output">✅ Clicked 'Select' button for Netgear device</span>
+                <span class="reporter-method-output">📄 Found message: This is a soft credit pull — it will not affect your credit score.</span>
+                <span class="reporter-method-output">✅ Credit pull message is correct</span>
+                <span class="reporter-method-output">✅ Clicked 'Continue' button for Netgear device</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">orderNowform</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">✅ Navigated to Finance Error Page: https://test-umaxx-tv.herokuapp.com/finance/error</span>
+                <span class="reporter-method-output">✅ Verified message: You’re Still Eligible to Get UMAXX</span>
+                <span class="reporter-method-output">✅ Clicked on 'Continue' button</span>
+                <span class="reporter-method-output">✅ Verified 'Order Now' heading is present</span>
+                <span class="reporter-method-output">✅ Entered dynamic Order Email: testuser1753698573084@gmail.com</span>
+                <span class="reporter-method-output">✅ Entered Order Password: xyzz4365</span>
+                <span class="reporter-method-output">✅ Entered Order Phone Number: 7865437698</span>
+                <span class="reporter-method-output">✅ Entered Order First Name: tTestP</span>
+                <span class="reporter-method-output">✅ Entered Order Last Name: DemmoTe</span>
+                <span class="reporter-method-output">✅ Entered Order Address: San Antonio</span>
+                <span class="reporter-method-output">✅ Clicked on address suggestion: San Antonio</span>
+                <span class="reporter-method-output">✅ Total Amount Displayed: Total</span>
+                <span class="reporter-method-output">✅ Total Amount is correctly displayed: $238.99</span>
+                <span class="reporter-method-output">✅ Clicked on Terms & Conditions checkbox</span>
+                <span class="reporter-method-output">✅ Clicked 'PROCEED TO FINAL STEP' button</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -229,26 +452,88 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.UmaxxStoreTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.InternetPlanTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">beforeSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public void tests.UmaxxStoreTest.verifyUmaxxStore())</span>
-                <span class="method-start">15836 ms</span>
+                <span class="method-name">beforeMethod(public void tests.InternetPlanTest.verify5gInternetPlanpage())</span>
+                <span class="method-start">12761 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyUmaxxStore</span>
-                <span class="method-start">15845 ms</span>
+                <span class="method-name">verify5gInternetPlanpage</span>
+                <span class="method-start">12768 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod(public void tests.UmaxxStoreTest.verifyUmaxxStore())</span>
-                <span class="method-start">47878 ms</span>
+                <span class="method-name">afterMethod(public void tests.InternetPlanTest.verify5gInternetPlanpage())</span>
+                <span class="method-start">31580 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyselectplan</span>
+                <span class="method-start">31792 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void tests.InternetPlanTest.verifyselectplan())</span>
+                <span class="method-start">31792 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod(public void tests.InternetPlanTest.verifyselectplan())</span>
+                <span class="method-start">43601 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void tests.InternetPlanTest.verifyRouterFunctionality())</span>
+                <span class="method-start">43824 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRouterFunctionality</span>
+                <span class="method-start">43824 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod(public void tests.InternetPlanTest.verifyRouterFunctionality())</span>
+                <span class="method-start">82628 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void tests.InternetPlanTest.Fillisoftdetails())</span>
+                <span class="method-start">82757 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Fillisoftdetails</span>
+                <span class="method-start">82759 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod(public void tests.InternetPlanTest.Fillisoftdetails())</span>
+                <span class="method-start">88119 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void tests.InternetPlanTest.orderNowform())</span>
+                <span class="method-start">88268 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">orderNowform</span>
+                <span class="method-start">88273 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod(public void tests.InternetPlanTest.orderNowform())</span>
+                <span class="method-start">119124 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">FillcardDetails</span>
+                <span class="method-start">119305 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void tests.InternetPlanTest.FillcardDetails())</span>
+                <span class="method-start">119305 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod(public void tests.InternetPlanTest.FillcardDetails())</span>
+                <span class="method-start">170022 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">48125 ms</span>
+                <span class="method-start">170241 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

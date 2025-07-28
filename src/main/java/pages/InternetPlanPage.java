@@ -151,7 +151,7 @@ public class InternetPlanPage extends SafeActionUmaxx5G {
             Assert.fail("'EXTRA' plan element is not displayed");
         }
     }
-    public void verifyAndScrollToUltraPlan() {
+   /* public void verifyAndScrollToUltraPlan() {
         String ultraPlanLocator = "(//b[normalize-space()='ULTRA'])[1]";
         
         safeExplicitWait(ultraPlanLocator, LONGWAIT);
@@ -172,7 +172,42 @@ public class InternetPlanPage extends SafeActionUmaxx5G {
             Assert.fail("'ULTRA' plan element is not displayed");
         }
         
+    }*/
+    
+    public void verifyAndScrollToUltraPlan() {
+        String ultraPlanLocator = "(//b[normalize-space()='ULTRA'])[1]";
+        
+        try {
+            safeExplicitWait(ultraPlanLocator, LONGWAIT);
+            scrollToElement(ultraPlanLocator);
+
+            if (safeIsDisplayed(ultraPlanLocator)) {
+                String actualText = getText(ultraPlanLocator).trim();
+                Reporter.log("📄 Found plan text: " + actualText, true);
+                BasesetupUmaxx5G.infoLog("📄 Found plan text: " + actualText);
+
+                Assert.assertEquals(actualText, "ULTRA", "❌ Plan text does not match 'ULTRA'!");
+                Reporter.log("✅ 'ULTRA' plan is displayed and scrolled into view", true);
+                BasesetupUmaxx5G.passLog("✅ 'ULTRA' plan is displayed and scrolled into view");
+
+            } else {
+                throw new Exception("'ULTRA' plan element is not displayed");
+            }
+
+        } catch (Exception e) {
+            Reporter.log("❌ Exception: " + e.getMessage(), true);
+            BasesetupUmaxx5G.failLog("❌ Exception: " + e.getMessage());
+
+            // Also log to Extent Report (optional if using ExtentTest object)
+            if (BasesetupUmaxx5G.extentTest != null) {
+                BasesetupUmaxx5G.extentTest.fail("❌ ULTRA plan verification failed: " + e.getMessage());
+            }
+
+            // Fail the test so it stops execution
+            Assert.fail("❌ Test Failed in verifyAndScrollToUltraPlan(): " + e.getMessage());
+        }
     }
+
     public void verifyAndScrollToPremiumPlan() {
         String premiumPlanLocator = "(//b[normalize-space()='PREMIUM'])[1]";
         
@@ -364,7 +399,7 @@ public class InternetPlanPage extends SafeActionUmaxx5G {
         }
     }
 
-    public void clickStarterPlan() {
+    /*public void clickStarterPlan() {
         String starterPlanButtonLoc = "//div[@id='plan-section']//div[4]//div[2]//div[3]";
 
         safeExplicitWait(starterPlanButtonLoc, LONGWAIT);
@@ -373,7 +408,32 @@ public class InternetPlanPage extends SafeActionUmaxx5G {
 
         Reporter.log("✅ Clicked on the STARTER plan", true);
         BasesetupUmaxx5G.infoLog("✅ Clicked on the STARTER plan");
+    }*/
+    
+    
+    public void clickStarterPlan() {
+        String starterPlanButtonLoc = "//div[3]//div[2]//div[3]";
+
+        try {
+            safeExplicitWait(starterPlanButtonLoc, LONGWAIT);
+            scrollToElement(starterPlanButtonLoc); // Scroll to the Starter plan button
+            
+            if (safeIsDisplayed(starterPlanButtonLoc)) {
+                safeClick(starterPlanButtonLoc); // Click on it
+                Reporter.log("✅ Clicked on the STARTER plan", true);
+                BasesetupUmaxx5G.passLog("✅ Clicked on the STARTER plan");
+            } else {
+                Reporter.log("❌ Starter Plan button not visible", true);
+                BasesetupUmaxx5G.failLog("❌ Starter Plan button not visible");
+                Assert.fail("Starter Plan button not visible");
+            }
+        } catch (Exception e) {
+            Reporter.log("❌ Failed to click STARTER plan: " + e.getMessage(), true);
+            BasesetupUmaxx5G.failLog("❌ Failed to click STARTER plan: " + e.getMessage());
+            Assert.fail("Exception occurred while clicking STARTER plan: " + e.getMessage());
+        }
     }
+
 
     public void verify5GCoverageAvailabilityHeading() {
         String headingLocator = "//b[normalize-space()='5G Coverage Availability']";
@@ -953,7 +1013,7 @@ public class InternetPlanPage extends SafeActionUmaxx5G {
         String locator = "(//button[normalize-space()='PROCEED TO FINAL STEP'])[1]";
         
         safeExplicitWait(locator, LONGWAIT);     // Wait until the button is visible
-      //  scrollToElementWithOffset(locator, -100);  // Optional smooth scroll to bring it into view
+        scrollToElementWithOffset(locator, -100);  // Optional smooth scroll to bring it into view
         safeClick(locator);                        // Perform click
         
         Reporter.log("✅ Clicked 'PROCEED TO FINAL STEP' button", true);

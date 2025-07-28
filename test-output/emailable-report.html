@@ -9,10 +9,45 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">32,302</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">157,434</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.UmaxxStoreTest</td><td><a href="#m0">verifyUmaxxStore</a></td><td rowspan="1">1753168768597</td><td rowspan="1">32030</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.InternetPlanTest</td><td><a href="#m0">FillcardDetails</a></td><td rowspan="1">1753698595825</td><td rowspan="1">50717</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">tests.InternetPlanTest</td><td><a href="#m1">Fillisoftdetails</a></td><td rowspan="1">1753698559279</td><td rowspan="1">5355</td></tr><tr class="passedeven"><td><a href="#m2">orderNowform</a></td><td rowspan="1">1753698564793</td><td rowspan="1">30851</td></tr><tr class="passedeven"><td><a href="#m3">verify5gInternetPlanpage</a></td><td rowspan="1">1753698489288</td><td rowspan="1">18796</td></tr><tr class="passedeven"><td><a href="#m4">verifyRouterFunctionality</a></td><td rowspan="1">1753698520344</td><td rowspan="1">38804</td></tr><tr class="passedeven"><td><a href="#m5">verifyselectplan</a></td><td rowspan="1">1753698508312</td><td rowspan="1">11809</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">tests.UmaxxStoreTest#verifyUmaxxStore</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">✅ Clicked the Navbar Toggle button<br/>✅ Clicked on 'UMAXX Store'<br/>✅ Verified heading text: Welcome 2 UMAXX Merchandise<br/>✅ Announcement bar text verified: Join the UMAXX Revolution get 20% off all merch</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">tests.InternetPlanTest#FillcardDetails</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: ❌ Could not find Stripe card number field in any iframe.
+	at org.testng.Assert.fail(Assert.java:111)
+	at pages.InternetPlanPage.enterStripeCardNumber(InternetPlanPage.java:1059)
+	at tests.InternetPlanTest.FillcardDetails(InternetPlanTest.java:98)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.InternetPlanTest#Fillisoftdetails</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">✅ Entered First Name: Test<br/>✅ Entered Last Name: test2</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.InternetPlanTest#orderNowform</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">✅ Navigated to Finance Error Page: https://test-umaxx-tv.herokuapp.com/finance/error<br/>✅ Verified message: You’re Still Eligible to Get UMAXX<br/>✅ Clicked on 'Continue' button<br/>✅ Verified 'Order Now' heading is present<br/>✅ Entered dynamic Order Email: testuser1753698573084@gmail.com<br/>✅ Entered Order Password: xyzz4365<br/>✅ Entered Order Phone Number: 7865437698<br/>✅ Entered Order First Name: tTestP<br/>✅ Entered Order Last Name: DemmoTe<br/>✅ Entered Order Address: San Antonio<br/>✅ Clicked on address suggestion: San Antonio<br/>✅ Total Amount Displayed: Total<br/>✅ Total Amount is correctly displayed: $238.99<br/>✅ Clicked on Terms & Conditions checkbox<br/>✅ Clicked 'PROCEED TO FINAL STEP' button</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.InternetPlanTest#verify5gInternetPlanpage</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">📄 Page Title: UMAXX - BIGGER FASTER STRONGER UMAXX 5G TV, IPTV<br/>✅ Page title verification passed<br/>✅ Clicked the Navbar Toggle button<br/>✅ Clicked on 5G Internet Plans link<br/>📄 Found heading: 5G Internet Plans<br/>✅ 5G Internet Plans heading text is correct<br/>📄 Paragraph text found: Experience Military Grade Speed and Security<br/>✅ Paragraph text is correct<br/>📄 Link text found: See Why UMAXX Offers America's Best Privacy & Security<br/>✅ Privacy & Security link text is correct<br/>📄 Found plan text: STARTER<br/>✅ 'STARTER' plan is displayed and scrolled into view<br/>📄 Found plan text: EXTRA<br/>✅ 'EXTRA' plan is displayed and scrolled into view<br/>📄 Found plan text: PREMIUM<br/>✅ 'PREMIUM' plan is displayed and scrolled into view<br/>📄 Found Starter plan price: 39<br/>✅ Starter plan price is correct and visible<br/>📄 Found Extra plan price: 79<br/>✅ Extra plan price is correct and visible<br/>📄 Found Premium plan price: 139<br/>✅ Premium plan price is correct and visible<br/>📄 Found Starter data plan: 10 GB<br/>✅ Starter data plan is correct and visible<br/>📄 Found EXTRA data plan: 50 GB<br/>✅ EXTRA data plan is correct and visible<br/>📄 Found PREMIUM data plan tag: UNLIMITED<br/>✅ PREMIUM data plan is correct and visible</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.InternetPlanTest#verifyRouterFunctionality</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">📄 Found heading: Choose Your 5G Wireless Device<br/>✅ 5G Wireless Device heading is correct<br/>✅ Clicked on 'See Why UMAXX Offers America's Best Coverage' link<br/>📄 Found paragraph text: Map Shows 5G Coverage of UMAXX,Verizon and AT&T<br/>✅ 5G Coverage paragraph text is correct<br/>✅ Clicked on the close (X) button<br/>📄 Found paragraph: Mobile Pocket WI-FI<br/>✅ Mobile Pocket WI-FI text is correct<br/>📄 Found paragraph: In-Home Device<br/>✅ In-Home Device text is correct<br/>📄 Found device title: Netgear MR6150<br/>✅ Netgear MR6150 device name is correctly displayed<br/>📄 Found device title: Nokia FWA 12<br/>✅ Nokia FWA 12 device name is correctly displayed<br/>📌 Best Use Text Found: HOME, BOAT,RV & ON-THE-GO<br/>✅ Netgear is correctly labeled for HOME, BOAT, RV & ON-THE-GO<br/>📌 Best Use Text Found for Nokia FWA: PERFECT FOR HOME<br/>✅ Nokia FWA 12 is correctly labeled as PERFECT FOR HOME<br/>✅ Clicked on 'More Details' for Netgear<br/>✅ Clicked Close button on document/modal<br/>✅ Clicked 'More Details' link for Nokia FWA<br/>🔁 Switched to document window<br/>❎ Closed document tab<br/>🔙 Switched back to main window<br/>✅ Clicked 'Select' button for Netgear device<br/>📄 Found message: This is a soft credit pull — it will not affect your credit score.<br/>✅ Credit pull message is correct<br/>✅ Clicked 'Continue' button for Netgear device</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.InternetPlanTest#verifyselectplan</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">✅ Clicked on the STARTER plan<br/>📄 Found heading text: 5G Coverage Availability<br/>✅ 5G Coverage Availability heading is correct<br/>📥 Entered ZIP code: 12345<br/>🟢 Clicked on the GO button after entering ZIP code</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

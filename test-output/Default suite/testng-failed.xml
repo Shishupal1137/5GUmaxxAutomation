@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.CoverageAvailityTest">
+      <class name="tests.InternetPlanTest">
         <methods>
-          <include name="verify5GInternetCoverageAvaility"/>
           <include name="beforeMethod"/>
           <include name="beforeSuite"/>
+          <include name="FillcardDetails"/>
           <include name="afterMethod"/>
           <include name="afterSuite"/>
         </methods>
-      </class> <!-- tests.CoverageAvailityTest -->
+      </class> <!-- tests.InternetPlanTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

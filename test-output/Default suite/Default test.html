@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jul 22 12:49:28 IST 2025</td>
+<td>Started on:</td><td>Mon Jul 28 15:58:09 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>32 seconds (32302 ms)</td>
+<tr><td>Total time:</td><td>157 seconds (157434 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,81 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.InternetPlanTest.FillcardDetails()'><b>FillcardDetails</b><br>Test class: tests.InternetPlanTest</td>
+<td><div><pre>java.lang.AssertionError: ❌ Could not find Stripe card number field in any iframe.
+	at org.testng.Assert.fail(Assert.java:111)
+	at pages.InternetPlanPage.enterStripeCardNumber(InternetPlanPage.java:1059)
+	at tests.InternetPlanTest.FillcardDetails(InternetPlanTest.java:98)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1430104337", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1430104337'><pre>java.lang.AssertionError: ❌ Could not find Stripe card number field in any iframe.
+	at org.testng.Assert.fail(Assert.java:111)
+	at pages.InternetPlanPage.enterStripeCardNumber(InternetPlanPage.java:1059)
+	at tests.InternetPlanTest.FillcardDetails(InternetPlanTest.java:98)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>50</td>
+<td>tests.InternetPlanTest@4009e306</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,20 +151,138 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.UmaxxStoreTest.verifyUmaxxStore()'><b>verifyUmaxxStore</b><br>Test class: tests.UmaxxStoreTest<br/>
-<a href="#Output-834562889" onClick='toggleBox("Output-834562889", this, "Show output", "Hide output");'>Show output</a>
+<td title='tests.InternetPlanTest.verifyselectplan()'><b>verifyselectplan</b><br>Test class: tests.InternetPlanTest<br/>
+<a href="#Output-882962176" onClick='toggleBox("Output-882962176", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-834562889" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-834562889">
-✅ Clicked the Navbar Toggle button<br/>
-✅ Clicked on 'UMAXX Store'<br/>
-✅ Verified heading text: Welcome 2 UMAXX Merchandise<br/>
-✅ Announcement bar text verified: Join the UMAXX Revolution get 20% off all merch<br/>
+<a href="#Output-882962176" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-882962176">
+✅ Clicked on the STARTER plan<br/>
+📄 Found heading text: 5G Coverage Availability<br/>
+✅ 5G Coverage Availability heading is correct<br/>
+📥 Entered ZIP code: 12345<br/>
+🟢 Clicked on the GO button after entering ZIP code<br/>
 </div>
 </td>
 <td></td>
-<td>32</td>
-<td>tests.UmaxxStoreTest@69453e37</td></tr>
+<td>11</td>
+<td>tests.InternetPlanTest@4009e306</td></tr>
+<tr>
+<td title='tests.InternetPlanTest.verify5gInternetPlanpage()'><b>verify5gInternetPlanpage</b><br>Test class: tests.InternetPlanTest<br/>
+<a href="#Output-1962826086" onClick='toggleBox("Output-1962826086", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1962826086" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1962826086">
+📄 Page Title: UMAXX - BIGGER FASTER STRONGER UMAXX 5G TV, IPTV<br/>
+✅ Page title verification passed<br/>
+✅ Clicked the Navbar Toggle button<br/>
+✅ Clicked on 5G Internet Plans link<br/>
+📄 Found heading: 5G Internet Plans<br/>
+✅ 5G Internet Plans heading text is correct<br/>
+📄 Paragraph text found: Experience Military Grade Speed and Security<br/>
+✅ Paragraph text is correct<br/>
+📄 Link text found: See Why UMAXX Offers America's Best Privacy & Security<br/>
+✅ Privacy & Security link text is correct<br/>
+📄 Found plan text: STARTER<br/>
+✅ 'STARTER' plan is displayed and scrolled into view<br/>
+📄 Found plan text: EXTRA<br/>
+✅ 'EXTRA' plan is displayed and scrolled into view<br/>
+📄 Found plan text: PREMIUM<br/>
+✅ 'PREMIUM' plan is displayed and scrolled into view<br/>
+📄 Found Starter plan price: 39<br/>
+✅ Starter plan price is correct and visible<br/>
+📄 Found Extra plan price: 79<br/>
+✅ Extra plan price is correct and visible<br/>
+📄 Found Premium plan price: 139<br/>
+✅ Premium plan price is correct and visible<br/>
+📄 Found Starter data plan: 10 GB<br/>
+✅ Starter data plan is correct and visible<br/>
+📄 Found EXTRA data plan: 50 GB<br/>
+✅ EXTRA data plan is correct and visible<br/>
+📄 Found PREMIUM data plan tag: UNLIMITED<br/>
+✅ PREMIUM data plan is correct and visible<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>tests.InternetPlanTest@4009e306</td></tr>
+<tr>
+<td title='tests.InternetPlanTest.Fillisoftdetails()'><b>Fillisoftdetails</b><br>Test class: tests.InternetPlanTest<br/>
+<a href="#Output-1857126088" onClick='toggleBox("Output-1857126088", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1857126088" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1857126088">
+✅ Entered First Name: Test<br/>
+✅ Entered Last Name: test2<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>tests.InternetPlanTest@4009e306</td></tr>
+<tr>
+<td title='tests.InternetPlanTest.verifyRouterFunctionality()'><b>verifyRouterFunctionality</b><br>Test class: tests.InternetPlanTest<br/>
+<a href="#Output-574746715" onClick='toggleBox("Output-574746715", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-574746715" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-574746715">
+📄 Found heading: Choose Your 5G Wireless Device<br/>
+✅ 5G Wireless Device heading is correct<br/>
+✅ Clicked on 'See Why UMAXX Offers America's Best Coverage' link<br/>
+📄 Found paragraph text: Map Shows 5G Coverage of UMAXX,Verizon and AT&T<br/>
+✅ 5G Coverage paragraph text is correct<br/>
+✅ Clicked on the close (X) button<br/>
+📄 Found paragraph: Mobile Pocket WI-FI<br/>
+✅ Mobile Pocket WI-FI text is correct<br/>
+📄 Found paragraph: In-Home Device<br/>
+✅ In-Home Device text is correct<br/>
+📄 Found device title: Netgear MR6150<br/>
+✅ Netgear MR6150 device name is correctly displayed<br/>
+📄 Found device title: Nokia FWA 12<br/>
+✅ Nokia FWA 12 device name is correctly displayed<br/>
+📌 Best Use Text Found: HOME, BOAT,RV & ON-THE-GO<br/>
+✅ Netgear is correctly labeled for HOME, BOAT, RV & ON-THE-GO<br/>
+📌 Best Use Text Found for Nokia FWA: PERFECT FOR HOME<br/>
+✅ Nokia FWA 12 is correctly labeled as PERFECT FOR HOME<br/>
+✅ Clicked on 'More Details' for Netgear<br/>
+✅ Clicked Close button on document/modal<br/>
+✅ Clicked 'More Details' link for Nokia FWA<br/>
+🔁 Switched to document window<br/>
+❎ Closed document tab<br/>
+🔙 Switched back to main window<br/>
+✅ Clicked 'Select' button for Netgear device<br/>
+📄 Found message: This is a soft credit pull — it will not affect your credit score.<br/>
+✅ Credit pull message is correct<br/>
+✅ Clicked 'Continue' button for Netgear device<br/>
+</div>
+</td>
+<td></td>
+<td>38</td>
+<td>tests.InternetPlanTest@4009e306</td></tr>
+<tr>
+<td title='tests.InternetPlanTest.orderNowform()'><b>orderNowform</b><br>Test class: tests.InternetPlanTest<br/>
+<a href="#Output-263382013" onClick='toggleBox("Output-263382013", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-263382013" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-263382013">
+✅ Navigated to Finance Error Page: https://test-umaxx-tv.herokuapp.com/finance/error<br/>
+✅ Verified message: You’re Still Eligible to Get UMAXX<br/>
+✅ Clicked on 'Continue' button<br/>
+✅ Verified 'Order Now' heading is present<br/>
+✅ Entered dynamic Order Email: testuser1753698573084@gmail.com<br/>
+✅ Entered Order Password: xyzz4365<br/>
+✅ Entered Order Phone Number: 7865437698<br/>
+✅ Entered Order First Name: tTestP<br/>
+✅ Entered Order Last Name: DemmoTe<br/>
+✅ Entered Order Address: San Antonio<br/>
+✅ Clicked on address suggestion: San Antonio<br/>
+✅ Total Amount Displayed: Total<br/>
+✅ Total Amount is correctly displayed: $238.99<br/>
+✅ Clicked on Terms & Conditions checkbox<br/>
+✅ Clicked 'PROCEED TO FINAL STEP' button<br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>tests.InternetPlanTest@4009e306</td></tr>
 </table><p>
 </body>
 </html>

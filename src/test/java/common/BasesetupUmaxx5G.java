@@ -50,7 +50,7 @@ public class BasesetupUmaxx5G {
         Thread.sleep(3000);
 
         // Setup Extent Report
-        ExtentSparkReporter reporter = new ExtentSparkReporter("UmaxxPhonePage.html");
+        ExtentSparkReporter reporter = new ExtentSparkReporter("Suite.html");
         reporter.config().setTheme(Theme.DARK);
         reporter.config().setDocumentTitle("Automation Test Report");
         reporter.config().setReportName("Umaxx Test Report");

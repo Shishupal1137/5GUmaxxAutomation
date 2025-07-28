@@ -1,0 +1,16 @@
+<suite name="Suite" parallel="classes" thread-count="5">
+  <test name="SmokeTests">
+    <classes>
+      <class name="tests.HomeTest"/>
+      <class name="tests.CustomerLoginTest"/>
+      <class name="tests.InternetPlanTest"/>
+      <class name="tests.UmaxxPhoneTest"/>
+      <class name="tests.CoverageAvailityTest"/>
+      <class name="tests.LatestNewsTest"/>
+      <class name="tests.UmaxxAboutTest"/>
+      <class name="tests.UmaxxStoreTest"/>
+      <class name="tests.UmaxxFAQTest"/>
+      <class name="tests.UmaxxGamesTest"/>
+    </classes>
+  </test>
+</suite>
